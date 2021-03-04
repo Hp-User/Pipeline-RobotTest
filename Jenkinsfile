@@ -5,7 +5,7 @@ pipeline {
      stage('SCM Code Checkout') {
 
             steps {
-                checkout scm //
+                checkout scm 
       } 
   }
         stage('Robot Run Test') {
