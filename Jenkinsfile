@@ -10,7 +10,7 @@ pipeline {
   }
         stage('Robot Run Test') {
             steps {
-sh 'export PATH="/home/dell/Desktop/Jenkins-CI-Introduction/BrowserDrivers:$PATH"'
+sh 'export PATH=/home/dell/Desktop/Jenkins-CI-Introduction/BrowserDrivers:$PATH'
                 sh 'robot --variable BROWSER:chrome login_tests'
             }
         }
