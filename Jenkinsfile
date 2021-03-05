@@ -5,7 +5,7 @@ pipeline {
      stage('SCM Code Checkout') {
 
             steps {
-                bat 'set PATH=%PATH%;C:\BrowserDrivers;'
+                bat 'set PATH=%PATH%;C:/BrowserDrivers;'
                 checkout scm 
       } 
   }
